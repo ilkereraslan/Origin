@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<title>jQuery</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+
+				$("#sortable").sortable();
+
+          		$("#a img").click(function() {
+    				$(this).attr("src", "cat1.png");
+				});	
+
+				$("#b img").click(function() {
+    				$(this).attr("src", "cat2.png");
+				});	
+
+				$("#c img").click(function() {
+    				$(this).attr("src", "cat3.png");
+				});	
+
+				$("#d img").click(function() {
+    				$(this).attr("src", "cat4.png");
+				});	
+
+				$("#e img").click(function() {
+    				$(this).attr("src", "cat5.png");
+				});	
+
+
+			});
+		
+		</script>
+
+		<link rel="stylesheet" href="ninja_puzzle.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+
+
+			
+	</head>
+	<body>
+		<div id="wrapper">
+		<div id="one" class="left">
+			<h1>Ninja Puzzle</h1>
+			<div class="border">
+				<ul id="sortable">
+					<li><img src="part4.png" /></li>
+					<li><img src="part1.png" /></li>
+					<li><img src="part5.png" /></li>
+					<li><img src="part3.png" /></li>
+					<li><img src="part2.png" /></li>
+				</ul>
+			</div>
+		</div>	
+		<div id="two" class="left">
+			<h1>Magic Ninja</h1>
+			<div class="border">
+				<ul id="magic">
+					<li id="a"><img src="part1.png" /></li>
+					<li id="b"><img src="part2.png" /></li>
+					<li id="c"><img src="part3.png" /></li>
+					<li id="d"><img src="part4.png" /></li>
+					<li id="e"><img src="part5.png" /></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>	

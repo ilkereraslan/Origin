@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<title>jQuery</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js" ></script>
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+
+				$("#add").click(function(){
+
+					$(".table tbody").append("<tr><td>" + $("#firstname").val() + "</td>" + "<td>" + $("#lastname").val() + "</td>" + "<td>" + $("#email").val() + "</td>" + "<td>" + $("#contact").vall() + "</td>" +"</tr>");
+
+					return false;
+					
+					
+				});
+
+			});
+		
+		</script>
+
+		<link rel="stylesheet" href="formadder.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+
+
+			
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Form Adder</h1>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email Address</th>
+						<th>Contact#</th>
+					</tr>
+				</thead>
+				<tbody>
+				
+				</tbody>
+
+			<table/>
+			<div id="border">
+				<h2>Add User</h2>
+				<hr></hr>
+				<form action="process.php" method="post" id="form">
+						<label for="name">First Name:</label>
+						<input type="text" name="firstname" id="firstname"/>
+						<label for="lastname">Last Name:</label>
+						<input type="text" name="lastname" id="lastname"/>
+						<label for="email">Email Address:</label>
+						<input type="text" name="email" id="email"/>
+						<label for="contact">Contact No.:</label>
+						<input type="text" name="contact" id="contact"/>
+						<br />
+						<input type="submit" value="Add User" class="btn btn-primary" id="add"/>
+				</form>	
+			</div>		
+			
+			
+		
+		</div>
+	</body>
+</html>	
+

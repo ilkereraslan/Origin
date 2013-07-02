@@ -1,0 +1,47 @@
+
+.left{
+	float:left;
+}
+.right{
+	float: right;
+}
+
+#wrapper {
+	margin:0px auto;
+	height:770px;
+	width:1080px;
+	border: 3px solid black;
+	border-radius: 5px;
+}
+
+#submit{
+	border: 5px solid #2FCBF2;
+	width:70px;
+	height: 50px;
+	border-radius: 20px;
+	background: linear-gradient(to right,#560505,#F52B10);
+	text-align: center;
+	color: white;
+	margin-left:388px;
+}
+
+#wrapper div{
+	height: auto;
+	width:500px;
+	margin: 20px;
+}
+
+img{
+	width:500px;
+	height:300px;
+}
+
+h1{
+	color:orange;
+	text-align: center;
+}
+
+
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<title>jQuery</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+
+          		$("img").click(function() {
+    				$(this).hide();
+				});	
+
+				$("#restore").click(function(){
+					$("img").show();
+				});
+		});		
+		
+		</script>
+
+		<link rel="stylesheet" href="disappear.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+
+
+			
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Gallery</h1>
+			<div id="border">
+				<div id="up">	
+					<div class="left">
+						<img src="img1.jpg"/>
+					</div>
+					<div class="left">
+						<img src="img2.jpg"/>
+					</div>
+					<div class="left">
+						<img src="img3.jpg"/>
+					</div>
+					<div class="left">
+						<img src="img4.jpg"/>
+					</div>
+					<div class="left">
+						<img src="img5.jpg"/>
+					</div>
+					<div class="left">
+						<img src="img6.jpg"/>
+					</div>
+					<div class="left">
+						<img src="img7.jpg"/>
+					</div>
+					<div class="left">
+						<img src="img8.jpg"/>
+					</div>
+				</div>	
+				<button type="button" id="restore">Restore
+				</button>
+			</div>
+			
+		</div>
+	</body>
+</html>	

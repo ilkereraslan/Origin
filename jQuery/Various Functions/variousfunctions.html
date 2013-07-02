@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<title>jQuery</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("#master").click(function(){
+				$("#a").toggle();
+				$("#b").slideDown("slow");
+				$("#c").slideToggle("slow");
+				$("#d").slideUp("slow");
+				$("#a").html("<p>What did you do?</p>");
+				
+
+			});
+
+		});
+		
+		</script>
+
+		<link rel="stylesheet" href="variousfunctions.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+
+
+			
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="q">
+				<button type="button" id="master">MASTER BUTTON</button>
+			</div>
+			<div class="sq" >
+				<p id="a">toggle</p>
+			</div>
+			<div id="border">	
+				<div class="sq left" id="b" >
+					<p>slideD</p>
+				</div>
+				<div class="sq left" id="c" >
+					<p>toggleD</p>
+				</div>
+				<div class="sq left" id="d" >
+					<p>slideU</p>
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>	

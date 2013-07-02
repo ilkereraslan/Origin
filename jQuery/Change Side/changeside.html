@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<title>jQuery</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+
+				
+				$("#a img").hover(function() {
+						if($(this).attr("src") == "img1back.jpg")
+						{
+							$(this).attr("src", "img1front.jpg");
+						}
+						else
+						{
+							$(this).attr("src", "img1back.jpg");
+						}
+						
+				});
+
+				//!!!!!!!!!!!!!!!  Or YOU CAN USE THIS ONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+				// $("#a img").mouseenter(function() {
+    			// 	$(this).attr("src", "img1back.jpg");
+				// });	
+
+				// $("#a img").mouseleave(function() {
+				// 	$(this).attr("src", "img1front.jpg");
+				// });	
+
+				$("#b img").hover(function() {
+						if($(this).attr("src") == "img2back.jpg")
+						{
+							$(this).attr("src", "img2front.jpg");
+						}
+						else
+						{
+							$(this).attr("src", "img2back.jpg");
+						}
+						
+				});
+
+				$("#c img").hover(function() {
+						if($(this).attr("src") == "img3back.jpg")
+						{
+							$(this).attr("src", "img3front.jpg");
+						}
+						else
+						{
+							$(this).attr("src", "img3back.jpg");
+						}
+						
+				});
+
+				$("#d img").hover(function() {
+						if($(this).attr("src") == "img4back.jpg")
+						{
+							$(this).attr("src", "img4front.jpg");
+						}
+						else
+						{
+							$(this).attr("src", "img4back.jpg");
+						}
+						
+				});
+
+			});
+		
+		</script>
+
+		<link rel="stylesheet" href="changeside.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+
+
+			
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Check it out!!!</h1>
+			<div id="a" class="left">
+				<img src="img1front.jpg" class="photo"/>
+			</div>	
+			<div id="b" class="left">
+				<img src="img2front.jpg" class="photo"/>
+			</div>	
+			<div id="c" class="left">
+				<img src="img3front.jpg" class="photo"/>
+			</div>	
+			<div id="d" class="left">
+				<img src="img4front.jpg" class="photo"/>
+			</div>	
+		
+		</div>
+	</body>
+</html>	

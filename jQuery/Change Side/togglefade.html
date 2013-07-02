@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<title>jQuery</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+
+				
+				$("#a img").hover(function() {
+					$(this).fadeOut(function(){
+						if($(this).attr("src") == "img1back.jpg")
+						{
+							$(this).attr("src", "img1front.jpg");
+							$(this).fadeIn();
+						}
+						else
+						{
+							$(this).attr("src", "img1back.jpg");
+							$(this).fadeIn();
+						}
+					});	
+				});
+
+				$("#b img").hover(function() {
+					$(this).fadeOut(function(){
+						if($(this).attr("src") == "img2back.jpg")
+						{
+							$(this).attr("src", "img2front.jpg");
+							$(this).fadeIn();
+						}
+						else
+						{
+							$(this).attr("src", "img2back.jpg");
+							$(this).fadeIn();
+						}
+					});	
+				});
+
+				$("#c img").hover(function() {
+					$(this).fadeOut(function(){
+						if($(this).attr("src") == "img3back.jpg")
+						{
+							$(this).attr("src", "img3front.jpg");
+							$(this).fadeIn();
+						}
+						else
+						{
+							$(this).attr("src", "img3back.jpg");
+							$(this).fadeIn();
+						}
+					});	
+				});
+				
+				$("#d img").hover(function() {
+					$(this).fadeOut(function(){
+						if($(this).attr("src") == "img4back.jpg")
+						{
+							$(this).attr("src", "img4front.jpg");
+							$(this).fadeIn();
+						}
+						else
+						{
+							$(this).attr("src", "img4back.jpg");
+							$(this).fadeIn();
+						}
+					});	
+				});
+
+			});
+		
+		</script>
+
+		<link rel="stylesheet" href="togglefade.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+
+
+			
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Check it out!!!</h1>
+			<div id="a" class="left">
+				<img src="img1front.jpg" class="photo"/>
+			</div>	
+			<div id="b" class="left">
+				<img src="img2front.jpg" class="photo"/>
+			</div>	
+			<div id="c" class="left">
+				<img src="img3front.jpg" class="photo"/>
+			</div>	
+			<div id="d" class="left">
+				<img src="img4front.jpg" class="photo"/>
+			</div>	
+		
+		</div>
+	</body>
+</html>	

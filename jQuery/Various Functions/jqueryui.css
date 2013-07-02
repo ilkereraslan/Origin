@@ -1,0 +1,13 @@
+
+.left{
+	float:left;
+}
+.right{
+	float: right;
+}
+
+#dialog{
+	height: 300px;
+	width:200px;
+}
+

@@ -1,0 +1,30 @@
+
+.left{
+	float:left;
+}
+.right{
+	float: right;
+}
+
+.sq{
+	height:100px;
+	width:100px;
+}
+
+#a{
+	background-color: red;
+}
+
+#b{
+	background-color: orange;
+}
+
+#c{
+	background-color: blue;
+}
+
+#d{
+	background-color: green;
+}
+
+

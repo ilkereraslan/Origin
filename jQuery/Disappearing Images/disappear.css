@@ -1,0 +1,42 @@
+
+.left{
+	float:left;
+	width :402px;
+	height :302px ;
+}
+
+
+img{
+	height:300px;
+	width:400px;
+}
+
+
+#border {
+	border: 10px solid orange;
+	height: 670px;
+	width:1625px;
+}
+
+#border img{
+	margin: 10px;
+}
+
+#restore{
+	width:70px;
+	height: 40px;
+	margin: 15px 770px;
+	background: linear-gradient(to bottom,#B3515C,#EA502B);
+	border-radius: 110px;
+}
+
+#up{
+	overflow: hidden;
+}
+
+
+h1{
+	color:#023A40;
+	text-align: center;
+}
+

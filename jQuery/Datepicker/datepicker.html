@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<title>jQuery</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+
+				$(".datepicker").datepicker();
+
+				
+				$("#submit").click(function(){
+					$("#p1").text("From: " + $("#one").val());
+					return false;
+				});
+
+				$("#submit").click(function(){
+					$("#p2").text("To: " + $("#two").val());
+					return false;
+
+				});	
+
+
+			});
+		
+		</script>
+
+		<link rel="stylesheet" href="datepicker.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+
+
+			
+	</head>
+	<body>
+		<div id="wrapper">
+			
+			<div id="content" >
+				<h1>Datepicker</h1>
+				<div id="info">
+					<h2>Your info:</h2>
+					<p id="p1" class="left">From:  </p>
+					<p id="p2" class="left">To:  </p>
+
+				</div>
+				<form action="process.php" method="post">
+					<input type="text" value="Date 1" class="datepicker" id="one" />
+					<input type="text" value="Date 2" class="datepicker" id="two"/> 
+					<br />
+					<input type="submit" value="Submit" id="submit" />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>	

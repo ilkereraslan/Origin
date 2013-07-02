@@ -1,0 +1,84 @@
+
+.left{
+	float:left;
+}
+.right{
+	float: right;
+}
+
+.datepicker {
+	border: 5px solid #2FCBF2;
+	width:350px;
+	height: 120px;
+	border-radius: 20px;
+	background: linear-gradient(to right,#560505,#F52B10);
+	text-align: center;
+	color: white;
+	margin: 10px 30px;
+	font-size: 20px;
+	font-family: verdana;
+}
+
+#info{
+	border: 5px solid #2FCBF2;
+	width:700px;
+	height:140px;
+	margin: 0px 65px;
+	background-color: #2FCBF2;
+
+}
+
+#submit{
+	border: 5px solid #2FCBF2;
+	width:70px;
+	height: 50px;
+	border-radius: 20px;
+	background: linear-gradient(to right,#560505,#F52B10);
+	text-align: center;
+	color: white;
+	margin-left:388px;
+}
+
+#p1{
+	border: 2px solid yellow;
+	width:180px;
+	height: 30px; 
+	margin-left: 65px;
+	background-color: #9E9E9E;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 21px;
+
+}
+#p2{
+	border: 2px solid yellow;
+	width:180px;
+	height: 30px; 
+	margin-left: 65px;
+	background-color: #9E9E9E;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 21px;
+	
+}
+
+h1{
+	color:#023A40;
+	text-align: center;
+}
+
+h2{
+	padding-left: 60px;
+}
+
+
+
+#wrapper {
+	margin:0px auto;
+	overflow: hidden;
+	width:900px;
+}
+
+#ui-datepicker-div{
+	display: none;
+}

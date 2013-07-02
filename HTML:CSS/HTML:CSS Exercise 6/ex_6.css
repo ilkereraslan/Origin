@@ -1,0 +1,169 @@
+
+*{
+	padding: 0px;
+	border:0px;
+	font-size: 6px;
+}
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.clear{
+	clear:both;
+}
+
+.element p{
+	color: #333333;
+	margin: 0px;
+	text-align: center;
+}
+
+.quad{
+	margin-bottom: 1px;
+	margin-right:  1px;
+}
+
+#horizontal ul .s{
+	padding-right: 11px
+}
+
+#vertical ul .high{
+	padding-top: 6px
+}
+
+
+
+#horizontal ul .ten{
+	padding-right: 14px
+}
+
+#horizontal ul li{
+	color:#D22F00;
+	list-style: none;
+	display: inline;
+	font-size: 12px;
+	padding-right: 20px;
+}
+
+#horizontal ul #group{
+	padding-right: 13px;
+}
+}
+
+#horizontal ul{
+	margin: 0px;
+}
+
+#three{
+	padding-left: 10px;
+}
+#vertical{
+	height:500px;
+	width:10px;
+	margin: 0px;
+}
+
+#vertical ul li{
+	color:#D22F00;
+	list-style: none;
+	padding-top: 16px;
+	font-size: 13px;
+}
+
+span{
+	color: #00239D;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+#wrapper{
+	height: 315px;
+	width: 565px;
+	background-color: #EEEEEE;
+}
+
+.quad{
+	height: 61px;
+	width:55px;
+
+}
+
+#up{
+	overflow: hidden;
+	width: 525px;
+	margin-right: 0px;
+	margin-left: 30px;
+}
+
+
+#metal .quad .element {
+	background-color: #6A9DFF;
+}
+
+#transition .quad .element {
+	background-color: #FB9B99;
+
+}
+
+#nonmetal .quad .element {
+	background-color: #FCCA00;
+}
+
+#innertrans .quad .element {
+	background-color: #2EC831;
+}
+
+#innertrans .quad .element p{
+text-align: center;
+margin: 0px;
+color: #52524C;
+}
+
+#innertrans{
+	margin: 20px 0px 0px 23px;
+	width: 480px
+}
+
+#innertrans p{
+	color:#D22F00;
+	margin-right: 6px;
+
+}
+
+#lan{
+	margin-bottom: 20px;
+	margin-top: 13px
+}
+
+#transition{
+		margin:62px 0px 0px 14px;
+}
+
+#transup{
+	height:61px;
+	width: 285px;
+}
+#transdown{
+	height:61px;
+	width: 285px;
+}
+
+.one{
+	margin-bottom: 1px;
+}
+
+.two{
+	margin-bottom: 1px;
+}
+
+.element{
+	border:1px solid black;
+	height: 29px;
+	width:26px;
+}
+
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Super Mario</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		
+
+		<link rel="stylesheet" href="mario.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+
+		<script type="text/javascript">
+
+
+			$(document).ready(function() {
+
+    			var mario_dead = function(m_xpos,m_ypos){
+    				if ((Math.abs(m_xpos-310)<+30 && m_ypos>40)||(Math.abs(m_xpos-1180)<+30 && m_ypos>40)){
+    					$("#mario").effect("explode");
+    					$("#display").show();
+    					$("#display").html("<p class=\"notif\">Game Over!</p>");
+    					$("embed").remove();
+    					$("#wrapper").prepend('	<embed src="over.mp3" autostart="true" loop="false" width="2" height="0" ></embed>');
+    				}
+    				
+    			}
+
+    			var mario_happy = function(m_xpos,m_ypos){
+    				if ((Math.abs(m_xpos-1457)<+50 && m_ypos>60)){
+    					$("#display").show();
+    					$("#display").html("<p class=\"notif\">Victory! <br />Kiss the princess!</p>");
+    					$("#mush1").effect("explode");
+    					$("#mush2").effect("explode");
+    					$("#peach").effect("bounce",{times:3},1000);
+    					$("embed").remove();
+    					$("#wrapper").prepend('	<embed src="complete.mp3" autostart="true" loop="false" width="2" height="0" ></embed>');
+    					
+    				}
+    				
+    			}
+
+
+    			
+    			$(document).keydown(function(key) {
+		        
+			        switch(parseInt(key.which,10)) {
+			    		case 37:
+							$('#mario').animate({left: "-=30px"}, 5);
+							console.log("mario.xpos:" + $("#mario").position().left);
+							console.log("peach.xpos:" + $("#peach").position().left);
+							console.log("mush1.xpos:" + $("#mush1").position().left);
+							console.log("mush2.xpos:" + $("#mush2").position().left);
+							mario_dead(($("#mario").position().left),($("#mario").position().top));
+							mario_happy(($("#mario").position().left),($("#peach").position().top));
+							break;
+						case 40:
+							$('#mario').animate({top: "+=30px"}, 5);
+							console.log("mario.ypos:" + $("#mario").position().top);
+							console.log("peach.ypos:" + $("#peach").position().top);
+							console.log("mush1.ypos:" + $("#mush1").position().top);
+							console.log("mush2.ypos:" + $("#mush2").position().top);
+							mario_dead(($("#mario").position().left),($("#mario").position().top));
+							mario_happy(($("#mario").position().left),($("#peach").position().top));
+
+							break;
+						case 38:
+							$('#mario').animate({top: "-=30px"}, 5);
+							console.log("mario.ypos:" + $("#mario").position().top);
+							console.log("peach.ypos:" + $("#peach").position().top);
+							console.log("mush1.ypos:" + $("#mush1").position().top);
+							console.log("mush2.ypos:" + $("#mush2").position().top);
+							mario_dead(($("#mario").position().left),($("#mario").position().top));
+							mario_happy(($("#mario").position().left),($("#peach").position().top));
+							break;
+						case 39:
+							$('#mario').animate({left: "+=30px"}, 5);
+							console.log("mario.ypos:" + $("#mario").position().left);
+							console.log("peach.ypos:" + $("#peach").position().left);
+							console.log("mush1.ypos:" + $("#mush1").position().left);
+							console.log("mush2.ypos:" + $("#mush2").position().left);
+							mario_dead(($("#mario").position().left),($("#mario").position().top));
+							mario_happy(($("#mario").position().left),($("#peach").position().top));
+							break;
+						default:
+							break;
+					}
+				});
+				
+		
+
+				$("#peach").effect("bounce",{times:3},1000);
+			});
+				
+			
+		  	
+				
+		</script>
+
+		
+</head>
+<body>
+	<div id="wrapper">
+	<embed src="theme.mp3" autostart="true" loop="true" width="2" height="0" > 
+	</embed>
+	<div id="display">
+	</div>	
+	<div id="environment">
+        <div id="mario">	
+        	<img src="mario.jpg" id="m"/>
+        </div>
+        <div id="peach" class="right">
+        	<img src="peach.jpg" id="p" />
+        </div>
+        <div id="mush1" >
+        	<img src="mushroom.jpg" class="mu" />
+        </div>
+         <div id="mush2" >
+        	<img src="mushroom.jpg" class="mu" />
+        </div>
+        
+    </div>    
+</div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+*{
+	font-family: sans-serif;
+}
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.clear{
+	clear:both;
+}
+
+.emphasis{
+	font-weight: bold;
+}
+
+.button{
+	margin:0px 0px 10px 110px;
+	padding:0px;
+	border:none;
+	}
+
+#header{
+	height:130px;
+	width:1020px;
+}
+
+#header p{
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px 20px 0px 0px;
+	margin-top: 26px;
+	margin-bottom: 0px;
+}
+#header ul{
+	background: linear-gradient(to bottom,#F4F7F8,#D6DDE2,#EFF2E5); 
+	padding:10px 0px;
+	margin: 0px;
+	border-top: 1px solid #999999;
+}
+
+#header ul li {
+	list-style: none;
+	display: inline;
+	padding: 0px 20px;
+	border-left: 1px solid #CCCCCC;
+}
+#header ul li a {
+	text-decoration: none;
+	font-size: 13px;
+	color: #666666;
+}
+
+#grey{
+	background-color: #F4F4F4;
+	height:30px;
+	width:1020px;
+}
+#content{
+	background: linear-gradient(to right,#000000,#3A3A38,#000000);
+	width: 1020px;
+	height:575px;
+}
+
+#factory{
+	border:3px solid white;
+	margin: 15px 0px 11px 45px;
+}
+
+
+#small{
+	height:14px;
+	width: 40px; 
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-right: 14px;
+}
+#one p{
+	color: #8E9062;
+	font-size: 10px;
+	margin: 0px;
+	padding-left: 60px;  
+}
+
+#passage p{
+	color: white;
+	padding-top: 8px;
+	padding-left: 18px;
+	font-size: 12px;
+}
+
+#passage{
+	height:260px;
+	width: 550px;
+	background: linear-gradient(to left,#373737,#6E6E6C);
+	font-size: 14px;
+	margin: 17px 18px 0px 0px; 	
+}
+
+#down div{
+	border:3px solid #222222;
+	display: inline;
+	margin: 10px 10px 0px 10px;
+}
+
+#down div{
+	font-size: 13px;
+}
+
+#down{
+	margin-left: 32px;
+}
+
+#two {
+	background:linear-gradient(to bottom,#FFFFFF,#FEF4DD);
+	width:221px;
+	border: 1px;
+	margin-left: 10px;
+}
+
+
+#three {
+	background:linear-gradient(to bottom,#FFFFFF,#FEF4DD);
+	width:221px;
+}
+
+#four {
+	background:linear-gradient(to bottom,#FFFFFF,#FEF4DD);
+	width:221px;
+}
+
+#five {
+	background:linear-gradient(to bottom,#FFFFFF,#FEF4DD);
+	width:221px;
+}
+
+#two h3{
+	padding: 4px 0px 4px 8px;
+	font-size: 12px;
+	margin: 0px;
+}
+
+#three h3{
+	padding: 4px 0px 4px 8px;
+	font-size: 12px;
+	margin: 0px;
+}
+
+#four h3{
+	padding: 4px 0px 4px 8px;
+	font-size: 12px;
+	margin: 0px;
+}
+
+#five h3{
+	padding: 4px 0px 4px 8px;
+	font-size: 12px;
+	margin: 0px;
+}
+
+h1{
+	background: linear-gradient(to bottom,#FFCF54,#FFC21D,#FFCE56);
+	margin-top: 0px;
+	font-size: 13px;
+	padding: 8px 7px; 
+}
+
+h2{
+	color: white;
+	font-size: 14px;
+	padding-left: 18px;
+}
+
+h3{
+	background: linear-gradient(to bottom, #FFCF54,#FFC21D,#FFCD4D);
+}
